@@ -1,9 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
-<body class="flex justify-center">
-    <div class="flex justify-center items-center w-[600px] h-[400px] bg-cyan-500">
-        <h1 class="text-3xl text-[#aacfde] text-center">còn gì nữa đâu mà khóc với sầu</h1>
-        
+<nav class="mt-[10px] h-[40px] w-[100%] bg-amber-700 items-center justify-between flex px-[20px] rounded-t-[10px] shadow shadow-gray-400">
+    <div class="text-2xl text-white">Learnly</div>
+    <div class="space-x-[25px] text-amber-100">
+      <a class="rounded-[5px] font-bold" href="#">Login</a>
+      <a class="rounded-[5px] font-bold" href="#">Hello</a>
     </div>
-</body>
+  </nav>
+  <div class="w-full border border-black h-[600px]">
+    <div class="w-full h-[150px] overflow-y-auto overflow-auto border-gray-300 rounded-lg p-2 bg-white">
+      <div class="grid grid-cols-4 sm:grid-cols-5 gap-2">
+        <div class="p-2 border rounded hover:bg-gray-100 cursor-pointer items-center justify-center">
+          <div class="bg-amber-200 h-full p-1">
+            <div class=" h-full">
+              <img class="h-full w-full" src="https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+              <p>Bai tap 2455</p>
+            </div>
+          </div>
+        </div>
+        <!-- Thêm nữa nếu cần -->
+      </div>
+    </div>
+  </div>
 {% endblock %}
