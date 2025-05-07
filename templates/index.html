@@ -1,26 +1,39 @@
 {% extends "base.html" %}
 {% block content %}
-<nav class="mt-[10px] h-[40px] w-[100%] bg-amber-700 items-center justify-between flex px-[20px] rounded-t-[10px] shadow shadow-gray-400">
-    <div class="text-2xl text-white">Learnly</div>
+  <nav class="h-[40px] w-full bg-amber-700 items-center justify-between flex px-[20px] shadow shadow-gray-400">
+    <div class="text-2xl text-white font-bold" style="font-family: 'Roboto', sans-serif;">Learnly</div>
     <div class="space-x-[25px] text-amber-100">
-      <a class="rounded-[5px] font-bold" href="#">Login</a>
-      <a class="rounded-[5px] font-bold" href="#">Hello</a>
+      <a class="rounded-[5px] font-bold" style="font-family: 'Roboto', sans-serif;" href="#">Login</a>
+      <a class="rounded-[5px] font-bold" style="font-family: 'Roboto', sans-serif;" href="#">Hello</a>
     </div>
   </nav>
-  <div class="justify-center items-center flex mt-3">
-    <div class="w-full border border-black h-[600px] max-w-[800px]">
-      <div class="w-full h-[150px] overflow-y-auto overflow-auto border-gray-300 rounded-lg p-2 bg-white">
-        <div class="grid grid-cols-5 sm:grid-cols-1 gap-2">
-          <div class="p-2 border h-[120px] hover:bg-gray-100 cursor-pointer items-center justify-center">
-            <div class="rounded-sm bg-amber-200 h-full p-1">
-              <div class=" h-full w-full">
-                <p>Bai tap 2455</p>
-              </div>
-            </div>
-          </div>
-          <!-- Thêm nữa nếu cần -->
-        </div>
-      </div>
+  <div class="justify-center items-center flex" style="font-family: 'Roboto', sans-serif;">
+    <div class="h-9 overflow-hidden mt-2 w-full grid  bg-gray-100 max-w-[800px] gap-4 rounded-sm text-center items-center justify-center">
+      <h1 class="font-bold">Ngay : today()</h1>
     </div>
+</div>
+
+  <div class="justify-center items-center flex">
+    <div class="mt-2 py-4 w-full grid  sm:grid-cols-2 grid-rows-5 md:grid-cols-3 bg-gray-100 max-w-[800px] px-4 gap-4 rounded-xl overflow-y-auto ">
+      <div class=" bg-amber-600 h-60 overflow-hidden justify-center items-center font-bold rounded-md hover:bg-amber-900">
+          <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="object-cover w-full h-40">
+
+          <div class="mx-auto p-2 text-wrap text-center">
+            <span class=" text-white" style="font-family: 'Roboto', sans-serif;">Bài tập tiếng anh</span><br>
+            <span class=" text-white" style="font-family: 'Roboto', sans-serif;">Ngay : 31/05/2025</span><br>
+          </div>
+      </div>
+      <div class=" bg-amber-600 h-60 ">
+
+      </div>
+      <div class=" bg-amber-600 h-60 ">
+
+      </div>
+      <div class=" bg-amber-600 h-60 ">
+
+      </div>
+      
+    </div>
+    
   </div>
 {% endblock %}
