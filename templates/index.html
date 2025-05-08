@@ -1,39 +1,55 @@
 {% extends "base.html" %}
 {% block content %}
-  <nav class="h-[40px] w-full bg-amber-700 items-center justify-between flex px-[20px] shadow shadow-gray-400">
-    <div class="text-2xl text-white font-bold" style="font-family: 'Roboto', sans-serif;">Learnly</div>
-    <div class="space-x-[25px] text-amber-100">
-      <a class="rounded-[5px] font-bold" style="font-family: 'Roboto', sans-serif;" href="#">Login</a>
-      <a class="rounded-[5px] font-bold" style="font-family: 'Roboto', sans-serif;" href="#">Hello</a>
+<body class="bg-[#f4f6fb]">
+  <nav class="h-[40px] w-full bg-[#1e3a8a] items-center justify-between flex px-[20px] shadow shadow-gray-400 text-white">
+    <div class="text-2xl font-bold" style="font-family: 'Roboto', sans-serif;">Learnly</div>
+    <div class="space-x-[25px]" style="font-family: 'Roboto', sans-serif;">
+      <a class="rounded-[5px] font-bold" href="#">Login</a>
+      <a class="rounded-[5px] font-bold" href="#">Hello</a>
     </div>
   </nav>
-  <div class="justify-center items-center flex" style="font-family: 'Roboto', sans-serif;">
-    <div class="h-9 overflow-hidden mt-2 w-full grid  bg-gray-100 max-w-[800px] gap-4 rounded-sm text-center items-center justify-center">
-      <h1 class="font-bold">Ngay : today()</h1>
+  <div class="mx-auto max-w-[800px] items-center justify-center h-screen ">
+
+    <div class="grid w-full grid-cols-4 overflow-y-auto shadow shadow-blue-500 p-1 sm:grid-cols-4 mt-1">
+      <div class="h-24 w-full  p-1">
+        <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
+      </div>
+      <div class="col-span-3 h-24 w-full p-1 text-black">
+        <ul>
+          <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
+          <li>Dưới này là gì luôn</li>
+          <li>Nội dung tiếp theo</li>
+        </ul>
+      </div>
     </div>
-</div>
-
-  <div class="justify-center items-center flex">
-    <div class="mt-2 py-4 w-full grid  sm:grid-cols-2 grid-rows-5 md:grid-cols-3 bg-gray-100 max-w-[800px] px-4 gap-4 rounded-xl overflow-y-auto ">
-      <div class=" bg-amber-600 h-60 overflow-hidden justify-center items-center font-bold rounded-md hover:bg-amber-900">
-          <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="object-cover w-full h-40">
-
-          <div class="mx-auto p-2 text-wrap text-center">
-            <span class=" text-white" style="font-family: 'Roboto', sans-serif;">Bài tập tiếng anh</span><br>
-            <span class=" text-white" style="font-family: 'Roboto', sans-serif;">Ngay : 31/05/2025</span><br>
-          </div>
+  
+    <div class="grid w-full grid-cols-4 overflow-y-auto p-2 sm:grid-cols-4 mt-1 shadow shadow-blue-500">
+      <div class="h-24 w-full p-1">
+        <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
       </div>
-      <div class=" bg-amber-600 h-60 ">
-
+      <div class="col-span-3 h-24 w-fullp-1 text-black">
+        <ul>
+          <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
+          <li>Dưới này là gì luôn</li>
+          <li>Nội dung tiếp theo</li>
+        </ul>
       </div>
-      <div class=" bg-amber-600 h-60 ">
-
-      </div>
-      <div class=" bg-amber-600 h-60 ">
-
-      </div>
-      
     </div>
-    
+  
+    <div class="grid w-full grid-cols-4 overflow-y-auto  p-2 sm:grid-cols-4 mt-1 shadow shadow-blue-500">
+      <div class="h-24 w-full  p-1">
+        <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
+      </div>
+      <div class="col-span-3 h-24 w-full  p-1 text-black">
+        <ul>
+          <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
+          <li>Dưới này là gì luôn</li>
+          <li>Nội dung tiếp theo</li>
+        </ul>
+      </div>
+    </div>
   </div>
+  
+  
+</body>
 {% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<body class="bg-[#f4f6fb]">
+    <nav class="h-[40px] w-full bg-[#1e3a8a] items-center justify-between flex px-[20px] shadow shadow-gray-400 text-white">
+        <div class="text-2xl font-bold" style="font-family: 'Roboto', sans-serif;">Learnly</div>
+        <div class="space-x-[25px]" style="font-family: 'Roboto', sans-serif;">
+            <a class="rounded-[5px] font-bold" href="#">Login</a>
+            <a class="rounded-[5px] font-bold" href="#">Hello</a>
+        </div>
+    </nav>
+    <div class="justify-center items-center flex" style="font-family: 'Roboto', sans-serif;">
+        <div class="h-9 overflow-hidden mt-2 w-full grid  bg-blue-200 max-w-[800px] gap-4 rounded-sm text-center items-center justify-center">
+        <h1 class="font-bold text-blue-800">Ngay : today()</h1>
+        </div>
+    </div>
+    <div class="justify-center items-center flex">
+        <div class="py-4 w-full grid  sm:grid-cols-2 grid-rows-5 md:grid-cols-3 bg-gray-100 max-w-[800px] px-4 gap-4 overflow-y-auto min-h-full">
+        <div class=" bg-white h-60 overflow-hidden justify-center items-center font-bold rounded-md  border-blue-400 border">
+            <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="object-cover w-full h-40 p-3">
+            <div class="mx-auto p-2 text-wrap text-center text-blue-800" style="font-family: 'Roboto',sans-serif;">
+                <span>MÃ BÀI TẬP</span><br>
+                <span>Ngày : 31/05/2025</span><br>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
