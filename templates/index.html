@@ -1,20 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
 <body class="bg-[#f4f6fb]">
-  <nav class="h-[40px] w-full bg-[#1e3a8a] items-center justify-between flex px-[20px] shadow shadow-gray-400 text-white">
-    <div class="text-2xl font-bold" style="font-family: 'Roboto', sans-serif;">Learnly</div>
-    <div class="space-x-[25px]" style="font-family: 'Roboto', sans-serif;">
-      <a class="rounded-[5px] font-bold" href="#">Login</a>
-      <a class="rounded-[5px] font-bold" href="#">Hello</a>
+  <nav class="mx-auto h-10 max-w-[1024px] min-w-[400px] bg-[#1e3a8a] items-center justify-between flex px-5 shadow shadow-gray-400 text-white" style="font-family: 'Roboto', sans-serif;">
+    <div class="text-2xl font-bold">Learnly</div>
+    <div class="space-x-3">
+      <a class="font-bold" href="#">Login</a>
+      <a class="font-bold" href="#">Hello</a>
     </div>
   </nav>
-  <div class="mx-auto max-w-[800px] items-center justify-center h-screen ">
 
-    <div class="grid w-full grid-cols-4 overflow-y-auto shadow shadow-blue-500 p-1 sm:grid-cols-4 mt-1">
-      <div class="h-24 w-full  p-1">
-        <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
+  <div class="mx-auto flex max-w-[1024px] min-w-[400px] items-center justify-center h-10 bg-slate-200 border border-blue-200 mt-1 " >
+    <div class="text-center justify-center shadow-blue-200 rounded">
+      <h1 class="text-xl font-bold">BẢNG TIN</h1>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-[1024px] items-center justify-center min-w-[400px] h-screen ">
+
+    <div class="grid w-full lg:grid-cols-5 shadow shadow-blue-200 p-1 sm:grid-cols-4 mt-1">
+      <div class="h-28 w-full  p-1">
+        <img src="https://images.unsplash.com/photo-1745986143057-e611033e37e8?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
       </div>
-      <div class="col-span-3 h-24 w-full p-1 text-black">
+      <div class="lg:col-span-4 sm:col-span-3 h-28 w-full p-1 text-blue-800">
         <ul>
           <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
           <li>Dưới này là gì luôn</li>
@@ -22,12 +29,12 @@
         </ul>
       </div>
     </div>
-  
-    <div class="grid w-full grid-cols-4 overflow-y-auto p-2 sm:grid-cols-4 mt-1 shadow shadow-blue-500">
-      <div class="h-24 w-full p-1">
+
+    <div class="grid w-full lg:grid-cols-5 shadow shadow-blue-200 p-1 sm:grid-cols-4 mt-1">
+      <div class="h-28 w-full  p-1">
         <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
       </div>
-      <div class="col-span-3 h-24 w-fullp-1 text-black">
+      <div class="lg:col-span-4 sm:col-span-3 h-28 w-full p-1 text-blue-800">
         <ul>
           <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
           <li>Dưới này là gì luôn</li>
@@ -35,12 +42,12 @@
         </ul>
       </div>
     </div>
-  
-    <div class="grid w-full grid-cols-4 overflow-y-auto  p-2 sm:grid-cols-4 mt-1 shadow shadow-blue-500">
-      <div class="h-24 w-full  p-1">
+
+    <div class="grid w-full lg:grid-cols-5 shadow shadow-blue-200 p-1 sm:grid-cols-4 mt-1">
+      <div class="h-28 w-full  p-1">
         <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
       </div>
-      <div class="col-span-3 h-24 w-full  p-1 text-black">
+      <div class="lg:col-span-4 sm:col-span-3 h-28 w-full p-1 text-blue-800">
         <ul>
           <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
           <li>Dưới này là gì luôn</li>
@@ -48,6 +55,60 @@
         </ul>
       </div>
     </div>
+
+    <div class="grid w-full lg:grid-cols-5 shadow shadow-blue-200 p-1 sm:grid-cols-4 mt-1">
+      <div class="h-28 w-full  p-1">
+        <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
+      </div>
+      <div class="lg:col-span-4 sm:col-span-3 h-28 w-full p-1 text-blue-800">
+        <ul>
+          <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
+          <li>Dưới này là gì luôn</li>
+          <li>Nội dung tiếp theo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid w-full lg:grid-cols-5 shadow shadow-blue-200 p-1 sm:grid-cols-4 mt-1">
+      <div class="h-28 w-full  p-1">
+        <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
+      </div>
+      <div class="lg:col-span-4 sm:col-span-3 h-28 w-full p-1 text-blue-800">
+        <ul>
+          <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
+          <li>Dưới này là gì luôn</li>
+          <li>Nội dung tiếp theo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid w-full lg:grid-cols-5 shadow shadow-blue-200 p-1 sm:grid-cols-4 mt-1">
+      <div class="h-28 w-full  p-1">
+        <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
+      </div>
+      <div class="lg:col-span-4 sm:col-span-3 h-28 w-full p-1 text-blue-800">
+        <ul>
+          <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
+          <li>Dưới này là gì luôn</li>
+          <li>Nội dung tiếp theo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid w-full lg:grid-cols-5 shadow shadow-blue-200 p-1 sm:grid-cols-4 mt-1">
+      <div class="h-28 w-full  p-1">
+        <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
+      </div>
+      <div class="lg:col-span-4 sm:col-span-3 h-28 w-full p-1 text-blue-800">
+        <ul>
+          <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
+          <li>Dưới này là gì luôn</li>
+          <li>Nội dung tiếp theo</li>
+        </ul>
+      </div>
+    </div>
+
+    
   </div>
   
   
