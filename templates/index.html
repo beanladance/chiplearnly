@@ -1,116 +1,63 @@
 {% extends "base.html" %}
 {% block content %}
 <body class="bg-[#f4f6fb]">
-  <nav class="mx-auto h-10 max-w-[1024px] min-w-[400px] bg-[#1e3a8a] items-center justify-between flex px-5 shadow shadow-gray-400 text-white" style="font-family: 'Roboto', sans-serif;">
-    <div class="text-2xl font-bold">Learnly</div>
-    <div class="space-x-3">
-      <a class="font-bold" href="#">Login</a>
-      <a class="font-bold" href="#">Hello</a>
+    <div class=" mt-8 justify-between px-10 mx-auto bg-slate-500 h-24 max-w-[1024px] flex" style="font-family: 'Roboto', sans-serif;">
+        <div class="my-auto items-center">
+            <h1 class="text-2xl">👋 Hello chip</h1>
+            <h3 class="text-xs">today (long day) </h3>
+        </div>
+        <div class="bg-slate-800 my-auto">
+            <select>
+                <option>Chọn ngày</option>
+                <option>Hôm nay</option>
+                <option>Ngày mai</option>
+                <option>Hôm qua</option>
+            </select>
+        </div>
     </div>
-  </nav>
+    <div class="max-w-[1024px] mx-auto overflow-y-auto bg-slate-600 p-10 mt-5 mb-2 h-screen">
+        <!-- 1 cái item bao gôm từ div này -->
+        <div class="mx-auto flex justify-between bg-blue-300 hover:bg-slate-300 h-14 w-full rounded-xl p-2 mb-2">
+            <div class="flex items-center">
+                <!-- Cho cái ảnh vào cái khung vuông này, tùy chọn ảnh theo thể loại nào -->
+                <div class="bg-white h-full w-10 rounded-xl"></div>
+                <div class="px-3"> Bai tap hom nay</div>
+                <div class="px-3"> 🚩 Bai moi, chua lam</div>
+                <!-- Thêm nhắc nhỏ vào đây! emoji -->
+            </div>
+            <div class="flex items-center">
+                <div class="bg-white items-center px-3 flex h-8 rounded-xl">🕖 Ngay lam bai</div>  
+                <!-- Có thể thêm xem, xóa sửa tùy chọn -->
+            </div>
+        </div>
 
-  <div class="mx-auto flex max-w-[1024px] min-w-[400px] items-center justify-center h-10 bg-slate-200 border border-blue-200 mt-1 " >
-    <div class="text-center justify-center shadow-blue-200 rounded">
-      <h1 class="text-xl font-bold">BẢNG TIN</h1>
+        <!-- 1 cái item bao gôm từ div này -->
+        <div class="mx-auto flex justify-between bg-blue-300 hover:bg-slate-300 h-14 w-full rounded-xl p-2 mb-2">
+            <div class="flex items-center">
+                <div class="bg-white h-full w-10 rounded-xl"></div>
+                <div class="px-3"> Bai tap hom nay</div>
+                <div class="px-3"> 🚩 Bai moi, chua lam</div>
+                <!-- Thêm nhắc nhỏ vào đây! emoji -->
+            </div>
+            <div class="flex items-center">
+                <div class="bg-white items-center px-3 flex h-8 rounded-xl">🕖 Ngay lam bai</div>  
+                <!-- Có thể thêm xem, xóa sửa tùy chọn -->
+            </div>
+        </div>
+
+        <!-- 1 cái item bao gôm từ div này -->
+        <div class="mx-auto flex justify-between bg-blue-300 hover:bg-slate-300 h-14 w-full rounded-xl p-2 mb-2">
+            <div class="flex items-center">
+                <div class="bg-white h-full w-10 rounded-xl"></div>
+                <div class="px-3"> Bai tap hom nay</div>
+                <div class="px-3"> 🚩 Bai moi, chua lam</div>
+                <!-- Thêm nhắc nhỏ vào đây! emoji -->
+            </div>
+            <div class="flex items-center">
+                <div class="bg-white items-center px-3 flex h-8 rounded-xl">🕖 Ngay lam bai</div>  
+                <!-- Có thể thêm xem, xóa sửa tùy chọn -->
+            </div>
+        </div>
     </div>
-  </div>
-
-  <div class="mx-auto max-w-[1024px] items-center justify-center min-w-[400px] h-screen ">
-
-    <div class="grid w-full lg:grid-cols-5 shadow shadow-blue-200 p-1 sm:grid-cols-4 mt-1">
-      <div class="h-28 w-full  p-1">
-        <img src="https://images.unsplash.com/photo-1745986143057-e611033e37e8?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
-      </div>
-      <div class="lg:col-span-4 sm:col-span-3 h-28 w-full p-1 text-blue-800">
-        <ul>
-          <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
-          <li>Dưới này là gì luôn</li>
-          <li>Nội dung tiếp theo</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="grid w-full lg:grid-cols-5 shadow shadow-blue-200 p-1 sm:grid-cols-4 mt-1">
-      <div class="h-28 w-full  p-1">
-        <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
-      </div>
-      <div class="lg:col-span-4 sm:col-span-3 h-28 w-full p-1 text-blue-800">
-        <ul>
-          <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
-          <li>Dưới này là gì luôn</li>
-          <li>Nội dung tiếp theo</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="grid w-full lg:grid-cols-5 shadow shadow-blue-200 p-1 sm:grid-cols-4 mt-1">
-      <div class="h-28 w-full  p-1">
-        <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
-      </div>
-      <div class="lg:col-span-4 sm:col-span-3 h-28 w-full p-1 text-blue-800">
-        <ul>
-          <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
-          <li>Dưới này là gì luôn</li>
-          <li>Nội dung tiếp theo</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="grid w-full lg:grid-cols-5 shadow shadow-blue-200 p-1 sm:grid-cols-4 mt-1">
-      <div class="h-28 w-full  p-1">
-        <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
-      </div>
-      <div class="lg:col-span-4 sm:col-span-3 h-28 w-full p-1 text-blue-800">
-        <ul>
-          <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
-          <li>Dưới này là gì luôn</li>
-          <li>Nội dung tiếp theo</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="grid w-full lg:grid-cols-5 shadow shadow-blue-200 p-1 sm:grid-cols-4 mt-1">
-      <div class="h-28 w-full  p-1">
-        <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
-      </div>
-      <div class="lg:col-span-4 sm:col-span-3 h-28 w-full p-1 text-blue-800">
-        <ul>
-          <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
-          <li>Dưới này là gì luôn</li>
-          <li>Nội dung tiếp theo</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="grid w-full lg:grid-cols-5 shadow shadow-blue-200 p-1 sm:grid-cols-4 mt-1">
-      <div class="h-28 w-full  p-1">
-        <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
-      </div>
-      <div class="lg:col-span-4 sm:col-span-3 h-28 w-full p-1 text-blue-800">
-        <ul>
-          <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
-          <li>Dưới này là gì luôn</li>
-          <li>Nội dung tiếp theo</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="grid w-full lg:grid-cols-5 shadow shadow-blue-200 p-1 sm:grid-cols-4 mt-1">
-      <div class="h-28 w-full  p-1">
-        <img src="https://images.unsplash.com/photo-1746513791663-e1fcea6208ac?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover" alt="" />
-      </div>
-      <div class="lg:col-span-4 sm:col-span-3 h-28 w-full p-1 text-blue-800">
-        <ul>
-          <li>Hôm nay có những cái gì cho hết vào đây, link chẳng hạn</li>
-          <li>Dưới này là gì luôn</li>
-          <li>Nội dung tiếp theo</li>
-        </ul>
-      </div>
-    </div>
-
-    
-  </div>
-  
-  
 </body>
 {% endblock %}
