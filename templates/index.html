@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 <body class="bg-[#f4f6fb]">
-    <div class=" mt-8 justify-between px-10 mx-auto bg-slate-500 h-24 max-w-[1024px] flex" style="font-family: 'Roboto', sans-serif;">
-        <div class="my-auto items-center">
+    <div class=" mt-8 justify-between lg:px-10 md:px-5 mx-auto bg-slate-500 h-24 max-w-[1024px] flex min-w-[400px]" style="font-family: 'Roboto', sans-serif;">
+        <div class="my-auto items-center sm:p-3 px-10">
             <h1 class="text-2xl">👋 Hello chip</h1>
             <h3 class="text-xs">today (long day) </h3>
         </div>
-        <div class="bg-slate-800 my-auto">
+        <div class="bg-slate-800 my-auto sm:p-3 px-10">
             <select>
                 <option>Chọn ngày</option>
                 <option>Hôm nay</option>
@@ -15,46 +15,18 @@
             </select>
         </div>
     </div>
-    <div class="max-w-[1024px] mx-auto overflow-y-auto bg-slate-600 p-10 mt-5 mb-2 h-screen">
+    <div class="max-w-[1024px] min-w-[400px] mx-auto overflow-y-auto bg-slate-600 lg:p-10 sm:p-3 sm:mt-3 mt-10 h-screen">
         <!-- 1 cái item bao gôm từ div này -->
-        <div class="mx-auto flex justify-between bg-blue-300 hover:bg-slate-300 h-14 w-full rounded-xl p-2 mb-2">
+        <div class="mx-auto flex justify-between bg-blue-300 hover:bg-slate-300 h-32 sm:h-18 w-full rounded-xl p-2 mb-2">
             <div class="flex items-center">
                 <!-- Cho cái ảnh vào cái khung vuông này, tùy chọn ảnh theo thể loại nào -->
-                <div class="bg-white h-full w-10 rounded-xl"></div>
-                <div class="px-3"> Bai tap hom nay</div>
-                <div class="px-3"> 🚩 Bai moi, chua lam</div>
+                <div class="bg-white h-10 w-10 rounded-xl "></div>
+                <div class="sm:px-1 px-3 "> Bai tap hom nay, 🚩 Bai moi, chua lam</div>
+                
                 <!-- Thêm nhắc nhỏ vào đây! emoji -->
             </div>
             <div class="flex items-center">
-                <div class="bg-white items-center px-3 flex h-8 rounded-xl">🕖 Ngay lam bai</div>  
-                <!-- Có thể thêm xem, xóa sửa tùy chọn -->
-            </div>
-        </div>
-
-        <!-- 1 cái item bao gôm từ div này -->
-        <div class="mx-auto flex justify-between bg-blue-300 hover:bg-slate-300 h-14 w-full rounded-xl p-2 mb-2">
-            <div class="flex items-center">
-                <div class="bg-white h-full w-10 rounded-xl"></div>
-                <div class="px-3"> Bai tap hom nay</div>
-                <div class="px-3"> 🚩 Bai moi, chua lam</div>
-                <!-- Thêm nhắc nhỏ vào đây! emoji -->
-            </div>
-            <div class="flex items-center">
-                <div class="bg-white items-center px-3 flex h-8 rounded-xl">🕖 Ngay lam bai</div>  
-                <!-- Có thể thêm xem, xóa sửa tùy chọn -->
-            </div>
-        </div>
-
-        <!-- 1 cái item bao gôm từ div này -->
-        <div class="mx-auto flex justify-between bg-blue-300 hover:bg-slate-300 h-14 w-full rounded-xl p-2 mb-2">
-            <div class="flex items-center">
-                <div class="bg-white h-full w-10 rounded-xl"></div>
-                <div class="px-3"> Bai tap hom nay</div>
-                <div class="px-3"> 🚩 Bai moi, chua lam</div>
-                <!-- Thêm nhắc nhỏ vào đây! emoji -->
-            </div>
-            <div class="flex items-center">
-                <div class="bg-white items-center px-3 flex h-8 rounded-xl">🕖 Ngay lam bai</div>  
+                <div class="bg-white items-center px-5  sm:px-2 flex h-10 rounded-md">🕖 Ngay lam bai</div>  
                 <!-- Có thể thêm xem, xóa sửa tùy chọn -->
             </div>
         </div>
