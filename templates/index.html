@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-<body class="bg-[#f4f6fb]">
-    <div class=" mt-8 justify-between lg:px-10 md:px-5 mx-auto bg-slate-500 h-24 max-w-[1024px] flex min-w-[400px]" style="font-family: 'Roboto', sans-serif;">
-        <div class="my-auto items-center sm:p-3 px-10">
-            <h1 class="text-2xl">👋 Hello chip</h1>
+<body class="">
+    <div class=" mx-auto flex w-full lg:w-[1024px] md:w-[800px] px-2 justify-between h-20" style="font-family: 'Roboto', sans-serif;">
+        <div class="my-auto items-center">
+            <h1 class="text-xl">Hello chip</h1>
             <h3 class="text-xs">today (long day) </h3>
         </div>
-        <div class="bg-slate-800 my-auto sm:p-3 px-10">
+        <div class="my-auto">
             <select>
                 <option>Chọn ngày</option>
                 <option>Hôm nay</option>
@@ -15,21 +15,32 @@
             </select>
         </div>
     </div>
-    <div class="max-w-[1024px] min-w-[400px] mx-auto overflow-y-auto bg-slate-600 lg:p-10 sm:p-3 sm:mt-3 mt-10 h-screen">
-        <!-- 1 cái item bao gôm từ div này -->
-        <div class="mx-auto flex justify-between bg-blue-300 hover:bg-slate-300 h-32 sm:h-18 w-full rounded-xl p-2 mb-2">
-            <div class="flex items-center">
-                <!-- Cho cái ảnh vào cái khung vuông này, tùy chọn ảnh theo thể loại nào -->
-                <div class="bg-white h-10 w-10 rounded-xl "></div>
-                <div class="sm:px-1 px-3 "> Bai tap hom nay, 🚩 Bai moi, chua lam</div>
-                
-                <!-- Thêm nhắc nhỏ vào đây! emoji -->
-            </div>
-            <div class="flex items-center">
-                <div class="bg-white items-center px-5  sm:px-2 flex h-10 rounded-md">🕖 Ngay lam bai</div>  
-                <!-- Có thể thêm xem, xóa sửa tùy chọn -->
+    <div class=" mx-auto flex lg:w-[1024px] md:w-[800px] px-6 bg-[#2faeb7] text-white h-14 rounded-t-xl" style="font-family: 'Roboto', sans-serif;">
+        <h1 class="font-bold my-auto text-xl">Bai tap</h1>
+    </div>
+    <div class=" mx-auto w-full lg:w-[1024px] bg-[#7BCBD2] md:w-[800px] px-4 pb-2" style="font-family: 'Roboto', sans-serif;">
+        <!-- 1 cái item -->
+        <div class="mb-2 pt-2">
+            <div class="px-2 pt-1 flex items-center">
+                <div class="flex h-9 rounded-xl bg-white px-4 items-center"><span class="text-2xl">🍩</span> <span class="text-black text-base px-1"># 1</span></div>
+                <div class="text-white text-wrap px-2">Bài tập hôm nay rất khó</div>
             </div>
         </div>
+
+        <div class="mb-2 pt-2">
+            <div class="px-2 pt-1 flex items-center">
+                <div class="flex h-9 rounded-xl bg-white px-4 items-center"><span class="text-2xl">🍩</span> <span class="text-black text-base px-1"># 10</span></div>
+                <div class="text-white text-wrap px-2">Bài tập hôm nay rất khó</div>
+            </div>
+        </div>
+
+        <div class="mb-2 pt-2">
+            <div class="px-2 pt-1 flex items-center">
+                <div class="flex h-9 rounded-xl bg-white px-4 items-center"><span class="text-2xl">🍩</span> <span class="text-black text-base px-1"># 10</span></div>
+                <div class="text-white text-wrap px-2">Bài tập hôm nay rất khó</div>
+            </div>
+        </div>
+
     </div>
 </body>
 {% endblock %}
